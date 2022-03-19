@@ -1,0 +1,15 @@
+title: Ari's Coffee Shop  # name of the site
+author: breezy fasano # name of site's author
+description: > # description of the site (multiple lines allowed)
+  good morning! welcome to the shop
+
+permalink: /:slug
+
+collections:
+  drinks:
+    output: true
+  syrups:
+    output: true
+
+sass:
+  style: :compressed

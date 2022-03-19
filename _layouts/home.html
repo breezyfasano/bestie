@@ -1,0 +1,42 @@
+---
+layout: default
+home: true
+---
+
+<header>
+  <h1 class="my-5">good morning bestie ☺ </h1>
+</header>
+
+<section class="intro">
+  <div class="container">
+    <h3 class="mt-5 quotes"></h3>
+    <p>{{ content }}</p>
+  </div>
+</section>
+
+
+<section class="recipes mt-5">
+  <div class="container">
+    <h2 class="mb-4">Drink menu<h2>
+    {% for drink in site.drinks %}
+    <article class="recipe mb-3">
+      <div class="recipe-container d-flex align-items-center">
+        <a href="{{drink.url}}"><p>{{drink.title}}</p></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="recipes mt-5">
+  <div class="container">
+    <h2 class="mb-4">syrups<h2>
+    {% for syrup in site.syrups %}
+    <article class="recipe mb-3">
+      <div class="recipe-container d-flex align-items-center">
+        <a href="{{syrup.url}}"><p>{{syrup.title}}</p></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
